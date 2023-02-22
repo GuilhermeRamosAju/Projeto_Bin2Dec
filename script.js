@@ -4,7 +4,7 @@ const resultado = document.createElement('p')
 
 function converter(){
   let binario = document.querySelector('input').value
-
+  resultado.innerText = ''
   if(/[2-9]/gm.test(binario) || (/[a-z]/gm.test(binario))){
     window.alert('Insira apenas 1 ou 0')
   }else{
@@ -17,6 +17,7 @@ function converter(){
       convertido = (2**posicao)*numero[i]
       soma += convertido
       posicao++
+  
     }
     console.log(soma)
     resultado.innerText = `O número ${binario} em decimal é ${soma}.`
