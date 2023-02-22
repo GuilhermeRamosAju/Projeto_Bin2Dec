@@ -1,4 +1,6 @@
 const botao = document.querySelector('button')
+const box = document.querySelector('.box')
+const resultado = document.createElement('p')
 
 function converter(){
   let binario = document.querySelector('input').value
@@ -17,5 +19,9 @@ function converter(){
       posicao++
     }
     console.log(soma)
+    resultado.innerText = `O número ${binario} em decimal é ${soma}.`
+    box.appendChild(resultado)
   }
 }
+
+
