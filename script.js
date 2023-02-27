@@ -18,7 +18,6 @@ function converter(){
       posicao++
       resultado.innerText = `O número ${binario} em decimal é ${soma}.`
     }
-    console.log(soma)
     box.appendChild(resultado)
   }
 }
